@@ -376,7 +376,7 @@ var width = $("#map").width(),
 
 	});
 	//d3.csv("https://raw.githubusercontent.com/NYCDOB/LL104/gh-pages/data/LL04_properties.csv",function(data){
-	d3.csv("data/ComplaintInspections_Round3.csv",function(data){
+	d3.csv("data/ComplaintInspections_Round4.csv",function(data){
 				points = data.map(function(d){
 				d.latLng = [+d.Lat,+d.Long];
 				d.xy = [+d.X,+d.Y];
@@ -519,7 +519,7 @@ var width = $("#map").width(),
 
 				"ajax": {
 					//"url": "https://raw.githubusercontent.com/NYCDOB/LL04/gh-pages/data/LL104_properties.json",
-					"url": "data/ComplaintInspections_Round3.json",
+					"url": "data/ComplaintInspections_Round4.json",
 					"dataSrc": ""
 				},
 				order: [[2, "asc"], [1, "asc"]],
